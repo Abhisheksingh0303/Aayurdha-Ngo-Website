@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+.language-switcher {
+    position: relative;
+    display: block;
+    width: 105px;
+    height: 20px;
+    background: transparent;
+    display: block;
+    padding: 0px 0px;
+    border-radius: 0px;
+}
+
+#polyglotLanguageSwitcher {}
+
+#polyglotLanguageSwitcher,
+#polyglotLanguageSwitcher * {
+    margin: 0;
+    padding: 0px 0px 0px;
+    outline: none;
+}
+
+#polyglotLanguageSwitcher ul {
+    list-style: none;
+}
+
+#polyglotLanguageSwitcher {
+    color: #fff !important;
+    line-height: normal;
+    position: relative;
+}
+
+#polyglotLanguageSwitcher form {
+    display: none;
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+/* JS-created Code
+/* ---------------------------------------------------------------------- */
+#polyglotLanguageSwitcher a {
+    text-decoration: none;
+    display: block;
+    padding: 0px 0px 0px 0px;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.025em;
+    font-family: var(--thm-font);
+    transition: all 500ms ease;
+}
+
+#polyglotLanguageSwitcher a.current:link,
+#polyglotLanguageSwitcher a.current:visited,
+#polyglotLanguageSwitcher a.current:active {
+    position: relative;
+    /* sets the initial position for the trigger arrow */
+}
+
+#polyglotLanguageSwitcher a.active {
+    /* This style is applied as long as the drop-down menu is visible. */
+    border-bottom: none !important;
+    border-radius: 3px 3px 0 0 !important;
+}
+
+#polyglotLanguageSwitcher span.trigger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#polyglotLanguageSwitcher span.trigger:before {
+    content: "\e900";
+    font-family: 'icomoon' !important;
+    position: absolute;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    top: -5px;
+    right: 0;
+}
+
+#polyglotLanguageSwitcher a.current:hover span.trigger,
+#polyglotLanguageSwitcher a.current:active span.trigger,
+#polyglotLanguageSwitcher a.active span.trigger {
+    background-position: left bottom !important;
+}
+
+/* Drop-Down Menu */
+#polyglotLanguageSwitcher ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    border-top: none !important;
+    border-radius: 0px;
+    background: #eff0f0;
+    width: 130px;
+    padding: 6px 5px 6px;
+    z-index: 9999999;
+}
+
+#polyglotLanguageSwitcher ul.dropdown li {
+    width: 100%;
+    padding: 4px 0px;
+    display: block;
+    border-top: 1px solid #e6e7e7;
+    border-bottom: 1px solid #f6f8f8;
+    transition: all 0.2s ease-in-out;
+}
+
+#polyglotLanguageSwitcher ul.dropdown li:first-child {
+    border-top: none;
+}
+
+#polyglotLanguageSwitcher ul.dropdown li:last-child {
+    border-bottom: none;
+}
+
+#polyglotLanguageSwitcher ul.dropdown li a {
+    width: 100%;
+    color: var(--thm-black);
+}
+
+#polyglotLanguageSwitcher ul.dropdown li:after {
+    display: none !important;
+}
+
+#polyglotLanguageSwitcher ul.dropdown li:hover a {
+    color: var(--thm-gray);
+}
+
+
+
+#en {
+    background-image: url(en.png);
+    background-image: none;
+}
+
+#fr {
+    background-image: url(fr.png);
+    background-image: none;
+}
+
+#de {
+    background-image: url(de.png);
+    background-image: none;
+}
+
+#it {
+    background-image: url(it.png);
+    background-image: none;
+}
+
+#es {
+    background-image: url(es.png);
+    background-image: none;
+}
